@@ -169,38 +169,3 @@ def GPSBaseHangzhou():
 
 GPSBaseHangzhou()
 
-# step = ([float(expectedCoordinates[-1][0]), float(expectedCoordinates[-1][1])] - [float(expectedCoordinates[0][0]), float(expectedCoordinates[0][1]]) )/ (stepCount - 1)
-
-# expectedCoordinates = np.array([transformedCoordinates + step * i for i in range(stepCount)])
-# epCoordinates = [[float(exLng[0]), float(exLng[1])] for exLng in expectedCoordinates]
-
-# errors = np.array(epCoordinates) - np.array(tfCoordinates)
-
-# print ";".join([str(latlng[0]) + ',' + str(latlng[1]) for latlng in errors])
-
-# print "Step: " + step 
-# print ";".join([str(errorLatLng) for errorLatLng in errors])
-# expectedCoordinates = np.array([transformedCoordinates[0] + step * i for i in range(stepCount)])
-
-
-# errors = expectedCoordinates - transformedCoordinates
-
-
-
-#p = [x * 10.0 for x in range(10)]
-
-# for i in errors:
-# 	print i
-
-
-# i = 0
-# p = 0
-# acsending = True
-# pi = 0
-# for v in errors:
-# 	if (v < p) == acsending:
-# 		print "Inflection Point: %d %d %f" % (i - pi, i, v)
-# 		pi = i
-# 	acsending = v > p
-# 	p = v
-# 	i+=1
